@@ -22,11 +22,11 @@
     <div v-if="eventos.length > 3" class="mt-8 text-center">
       <router-link
           to="/eventos"
-          class="inline-block border border-[#8a8f6a] text-[#8a8f6a] px-6 py-2 font-medium
+          class="inline-flex items-center gap-2 border border-[#8a8f6a] text-[#8a8f6a] px-6 py-2 font-medium
          hover:bg-[#8a8f6a] hover:text-white
          transition duration-300 ease-in-out"
       >
-        Ver mais
+        Ver mais...
       </router-link>
     </div>
   </section>
@@ -35,6 +35,8 @@
 <script setup>
 import { computed } from 'vue'
 import EventCard from './EventCard.vue'
+import { PlusIcon } from '@heroicons/vue/24/solid'
+import { EyeIcon } from '@heroicons/vue/24/solid'
 
 const eventos = [
   {
