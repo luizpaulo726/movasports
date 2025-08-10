@@ -15,12 +15,13 @@
       </p>
       <router-link
           :to="`/evento/${evento.id}`"
-          class="self-center mt-4 inline-flex items-center justify-center
-             bg-[#8a8f6a] text-white py-2 px-6  shadow-md
-             hover:bg-[#7a7f5d] hover:shadow-lg hover:-translate-y-0.5
-             transition duration-300 ease-in-out"
+          class="mt-4 inline-flex items-center justify-center w-full
+         bg-[#8a8f6a] text-white py-3 px-6 shadow-md
+         hover:bg-[#7a7f5d] hover:shadow-lg hover:-translate-y-0.5
+         transition duration-300 ease-in-out"
       >
         Mais detalhes
+        <ArrowRightIcon class="w-5 h-5" />
       </router-link>
     </div>
   </div>
@@ -30,4 +31,5 @@
 defineProps({
   evento: Object
 })
+import { ArrowRightIcon } from '@heroicons/vue/24/solid'
 </script>
