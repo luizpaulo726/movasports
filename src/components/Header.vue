@@ -20,7 +20,7 @@
             class="inline-block border border-[#8a8f6a] text-[#8a8f6a] px-6 py-2 font-medium
                  hover:bg-[#8a8f6a] hover:text-white transition duration-300 ease-in-out"
         >
-          Login
+          Loginn
         </a>
         <a
             href="/registro"
