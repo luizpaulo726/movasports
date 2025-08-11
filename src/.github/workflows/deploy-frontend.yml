@@ -3,7 +3,9 @@ name: Deploy Frontend
 on:
   push:
     branches:
-      - master  # ou main, depende do nome da sua branch principal
+      - master   # roda apenas na branch master
+    paths:
+      - '**'     # inclui qualquer arquivo, inclusive README
 
 jobs:
   deploy:
@@ -13,9 +15,9 @@ jobs:
       - name: Acessar servidor via SSH e rodar comandos de deploy
         uses: appleboy/ssh-action@v0.1.6
         with:
-          host: ${{ secrets.SERVER_IP }}         # IP do seu servidor
-          username: ubuntu                       # usuário SSH da sua instância
-          key: ${{ secrets.SERVER_SSH_KEY }}    # chave privada SSH (sem senha)
+          host: ${{ secrets.SERVER_IP }}
+          username: ubuntu
+          key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
             cd /home/ubuntu/movasports
             git pull origin master
