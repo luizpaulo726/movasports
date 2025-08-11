@@ -6,7 +6,7 @@ import { UserPlusIcon } from '@heroicons/vue/24/solid'
 <template>
   <div>
     <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Bem-vindo ao meu site!</h1>
-    <p class="mt-4 text-gray-600 text-center mb-10">Aqui vai o conteúdo principal.</p>
+    <p class="mt-4 text-gray-600 text-center mb-10">Aqui vai o conteúdo principall.</p>
 
     <EventSection />
 
